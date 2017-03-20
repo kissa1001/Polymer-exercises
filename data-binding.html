@@ -1,0 +1,23 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="data-binding">
+  <template>
+    <style>
+      div {
+        background-color: #f4cd41;
+      }
+    </style>
+    <div>
+      <p>This is <b>{{owner}}'s</b> proto-element!</p>
+    </div>
+  </template>
+</dom-module>
+
+  <script>
+    Polymer({
+      is: 'data-binding',
+      ready: function() {
+        this.owner = "John";
+      }
+    });
+  </script>
