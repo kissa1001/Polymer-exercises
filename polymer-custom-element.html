@@ -2,14 +2,26 @@
 <dom-module id="polymer-custom-element">
   <template>
     <style>
-      div {
+      .dom {
         display: inline-block;
-        background-color: #ccc;
+        background-color: #42f4d1;
+        border-radius: 8px;
+        padding: 4px;
+      }
+      .light-dom {
+        background-color: #f4418f;
         border-radius: 8px;
         padding: 4px;
       }
     </style>
-    <div></div>
+    <div>
+      <div class="dom">
+        <p>This is DOM element</p>
+      </div>
+      <div class="light-dom">
+        <content></content>
+      </div>
+    </div>
   </template>
 </dom-module>
 
