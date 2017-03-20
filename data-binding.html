@@ -16,8 +16,11 @@
   <script>
     Polymer({
       is: 'data-binding',
-      ready: function() {
-        this.owner = "John";
+      properties: {
+        owner: {
+          type: String,
+          value: 'Daniel'
+        }
       }
     });
   </script>
