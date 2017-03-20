@@ -1,4 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-input/iron-input.html">
 
 <dom-module id="data-binding">
   <template>
@@ -9,6 +10,7 @@
     </style>
     <div>
       <p>This is <b>{{owner}}'s</b> proto-element!</p>
+      <input is="iron-input" bind-value="{{owner}}" placeholder="Type in your name" />
     </div>
   </template>
 </dom-module>
